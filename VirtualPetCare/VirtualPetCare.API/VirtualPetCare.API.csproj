@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\VirtualPetCare.Core\VirtualPetCare.Core.csproj" />
     <ProjectReference Include="..\VirtualPetCare.Infrastructure\VirtualPetCare.Infrastructure.csproj" />
     <ProjectReference Include="..\VirtualPetCare.Service\VirtualPetCare.Service.csproj" />
   </ItemGroup>
