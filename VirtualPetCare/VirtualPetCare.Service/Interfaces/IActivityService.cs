@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VirtualPetCare.Core.DTOs;
+using VirtualPetCare.Service.CustomResponse;
 
 namespace VirtualPetCare.Service.Interfaces
 {
     public interface IActivityService
     {
-        ActivityDTO Add(ActivityCreateDTO activityCreateDTO);
-        List<ActivityDTO> GetById(int petId);
+        Task<CustomResponse<ActivityDTO>> Add(ActivityCreateDTO activityCreateDTO);
+        Task<CustomResponse<List<ActivityDTO>>> GetById(int petId);
     }
 }
